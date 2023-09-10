@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Classes Auxiliares*/
+
+.container{
+
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+
+}
+
+.w50{
+
+    width: 50%;
+    float: left;
+}
+
+.w33{
+
+    width: 33.3%;
+    float: left;
+
+}
+
+.center{
+
+    text-align: center;
+
+}
+
+.clear{clear:both;}
+
+/*Classes Do Meu Site*/
+
+header{
+
+    padding: 8px 0;
+
+}
+
+.logo{
+
+    float: left;
+
+}
+
+.logo h2{
+
+    font-weight: normal;
+
+}
+
+.logo a{
+
+    text-decoration: none;
+    color: black;
+}
+
+.menu-desktop{
+
+    float: right;
+
+}
+nav.menu-desktop ul{
+
+    position:relative;
+    top: 8px;
+
+}
+
+nav.menu-desktop li{
+    padding: 0 10px ;
+    display: inline-block;
+
+}
+
+nav.menu-desktop li.selected {
+
+    font-weight: bold;
+
+}
+
+nav.menu-desktop a{
+
+    color: black;
+    text-decoration: none;
+
+}
+
+nav.menu-desktop a:hover{
+
+    text-decoration: underline;
+
+}
+
+nav.menu-mobile{
+
+    display: none;
+    float: right;
+
+}
+
+nav.menu-mobile h2{
+
+    cursor: pointer;
+
+}
+
+nav.menu-mobile ul{
+
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute ;  
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    text-align: center;
+
+}
+nav.menu-mobile li{
+
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+
+}
+nav.menu-mobile a{
+
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+nav.menu-mobile li.selected{
+
+    background: rgb(225, 225, 225);
+
+}
+
+
+/*Sessão Main*/
+
+section.main-bg{
+    position: relative;
+    width: 100%;
+    padding: 140px 0 200px 0 ;
+    background-image: url("../imagens/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.main-bg > .container{
+
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.overlay{
+
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.5);
+    left: 0;
+    top: 0;
+}
+
+
+section.main-bg h2{
+
+    text-align: center;
+    color: #52aaa7;
+    font-size: 40px;
+    font-weight: normal;
+
+}
+
+section.main-bg p {
+
+    text-align: left;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+section.diferenciais{
+
+    padding: 30px 0;
+    text-align: center;
+    background-color: #ffffff; 
+}
+
+.line-text{
+
+    position: relative;
+    display: inline-block;
+    color: #52aaa7;
+}
+
+.line-text > div{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 3px;
+    background: #52aaa7;
+
+}
+
+.line-text h2{
+
+    font-weight: normal;
+    font-size:27px ;
+
+}
+.icones-diferenciais{
+
+    margin-top: 30px;
+
+
+}
+.box-icone-single{
+
+    float: left;
+    width: 33.3%;
+    margin-bottom: 20px;
+
+    padding: 0 10px;
+
+}
+.box-icone-single h2{
+
+    color: #8a6b62;
+    font-size: 40px;
+
+}
+
+.box-icone-single p{
+
+    color: #646464;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+
+section.sobre-equipe{
+
+    padding: 30px 0;
+    background-color: rgb(225, 225, 225);
+}
+
+section.sobre-equipe > .container{
+
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.equipe-container{
+    width: 50%;
+}
+
+.sobre-container{
+
+    width: 50%;
+
+
+}
+
+.sobre-container p {
+
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+
+.img-avatar{
+
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    float: left;
+    margin: 10px 15px 0 0;
+}
+
+.decricao-avatar{
+
+    float: right;
+    display: inline-block;
+
+}
+.avatar-box{
+
+    margin: 15px 0;
+
+}
+
+.avatar-box h3{
+
+    color: rgb(30, 30, 30);
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+.avatar-box p{
+
+    color: rgb(30, 30, 30);
+    font-weight: lighter;
+
+}
+
+section.Inscrição{
+    background-color: #52aaa7;
+    padding: 20px 0;
+}
+
+.chamada {
+    float: left;
+    width: 50%;
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.InputText{
+    float: right;
+    width: 50%;
+    
+}
+
+.InputText input[type = text] {
+    width: calc(100% - 125px);
+    height: 40px;
+    border: 1px  solid #ccc;
+    display: inline-block;
+}
+
+.InputText input[type=submit] {
+    width: 120px;
+    height: 40px;
+    background-color: #1d6c64;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/*Fotos*/
+
+section.cards{
+
+    padding: 30px 0;
+
+}
+
+.card-single{
+
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+
+}
+
+.card-single img{
+
+    width: 100%;
+    
+
+}
+
+.card-single h3{
+    margin-top: 5px;
+    width: 100%;
+
+}
+
+.card-single p{
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+/*Roda Pé*/
+
+footer.nivel1{
+    padding: 30px 0;
+}
+
+.nivel1{
+    background-color: #52aaa7;
+}
+
+.divisão{
+    color: #ffffff;
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.divisão h3{
+    margin-top: 10px;
+    width: 100%;
+    font-style: lighter;
+    font-weight: lighter;
+}
+
+.divisão p{
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.divisão a{
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.divisão ul{
+    list-style-type: none;
+}
+
+.nivel2{
+    background-color: #1d6c64;
+}
+
+.nivel2 p{
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
