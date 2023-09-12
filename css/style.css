@@ -449,3 +449,77 @@ footer.nivel1{
     color: #ffffff;
     padding: 20px;
 }
+
+
+/* AQUI COMEÇA O "SOBRE"*/
+section.imagemFundo{
+    position: relative;
+    width: 100%;
+    padding: 30px 0 30px 0 ;
+    background-image: url("../imagens/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.imagemFundo > .container{
+    position: relative;
+    z-index: 2;
+}
+
+.imagemFundo h1{
+    color: #52aaa7;
+    font-size: 35px;
+    font-style: lighter;
+    font-weight: lighter;
+    position: left;
+}
+
+.imagemFundo p{
+    color: #ffffff;
+    font-style: lighter;
+    font-weight: lighter;
+    position: left;
+    
+}
+/*--------------------------------------------*/
+.imagemcomtextosobre img{
+    width: 65%;
+    float: left;
+    padding: 60px;
+}
+
+.imagemcomtextosobre p{
+    text-align: left;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+/*--------------------------------------------*/
+section.imagemFundo2{
+    position: relative;
+    width: 100%;
+    padding: 30px 0 30px 0 ;
+    background-image: url("../imagens/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.imagemFundo2 > .container{
+    position: relative;
+    z-index: 2;
+}
+
+.imagemFundo2 h1{
+    text-align: center;
+    color: #52aaa7;
+    border: 1px solid #52aaa7;
+}
+
+.imagemFundo2 p{
+    color: #ffffff;
+    text-align: center;
+}
+/*--------------------------------------------*/
