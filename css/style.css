@@ -444,34 +444,101 @@ section.equipe{
 
 /*AQUI COMEÇA A IMAGEM-HISTÓRIA*/
 
+section.Imagem-Historia > .container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .Imagem-Historia{
-	background-color: #646464;
-	
+	padding:30px 0;
+	background: rgb(225,225,225);
 }
 
-.Imagem-Container{
+.Imagem-Dia-Container{
+	width: 50%;
+	padding-right: 10px;
+}
+
+.Nossa-Historia-Container{
 	width: 50%;
 }
 
-.Historia-Container{
-	width: 50%;
+.Imagem-Imagem-Do-Dia img{
+	width: 80%;
+	height: 800%;
+	margin-top: 10px;
 }
 
-.imagemdia-single
-{
+.Imagem-Imagem-Do-Dia{
 	position: relative;
-	width: 60%;
-	padding-top: 60%;
-	margin:0 auto;
+	display: inline-block;
+}
+.Imagem-Imagem-Do-Dia p{
+	position: absolute;
+	color: white;
+	top: 250px;
+	left: 300px;
 }
 
-.imagemdia-single-container{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background-color: #ccc;
-	background-size: 100% 100%;
+/*AQUI COMEÇA A CONTATO*/
 
+section.contato{
+	min-height: 100%;
+	padding: 30px 0;
+}
+
+section.contato .w50, section.contato .w100{
+	padding: 0 10px;
+}	
+
+.formulario form{
+	margin-top: 10px;
+}
+
+.formulario h2{
+	background: #dddddd;
+	text-align: center;
+	color: #acac9d;
+	font-size: 17px;
+	font-weight: normal;
+	border-left: 5px solid #cccccc;
+	padding: 4px 0;
+}
+
+.formulario input[type=text], .formulario input[type=email]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding-left: 8px;
+}
+
+.formulario textarea{
+	width: 100%;
+	height: 120px;
+	border:1px solid #ccc;
+	margin-bottom: 15px;
+	padding: 10px;
+	resize: vertical;
+}
+
+.tag-form{
+	padding-left: 40px;
+
+}
+
+.tag-form h2{
+	font-weight: normal;
+}
+
+.tag-form p{
+	font-weight: lighter;
+}
+
+.tag-form p.tag-contato{
+	color: white;
+	background: #249b8f;
+	text-align: center;
+	margin-top: 6px;
+	padding: 8px 4px;
 }
