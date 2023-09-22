@@ -55,6 +55,41 @@ header{
 	color: black;
 	text-decoration: none;
 }
+
+
+nav.menu-mobile{
+	display: none;
+	float: right;
+}
+
+nav.menu-mobile h2{
+	cursor: pointer;
+}
+nav.menu-mobile ul{
+	display: none;
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu-mobile li{
+	padding:8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected{
+	background: rgb(225,225,225);
+}
+
+nav.menu-mobile a{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
 nav.menu-desktop li.selected{font-weight: normal;text-decoration: underline;}
 nav.menu-desktop{
 	float: right;
@@ -83,7 +118,7 @@ section.main-bg{
 	position: relative;
 	width: 100%;
 	padding:140px 0 200px 0;
-	background-image: url('../imagens/bg1.jpg');
+	background-image: url('../images/bg1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -379,7 +414,7 @@ section.paralax{
 	padding: 30px 0;
 	width: 100%;
 	min-height: 200px;
-	background-image: url('../imagens/bg1.jpg');
+	background-image: url('../images/bg1.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -442,73 +477,65 @@ section.equipe{
 	background-size: 100% 100%;
 }
 
-/*AQUI COMEÇA A IMAGEM-HISTÓRIA*/
-
-section.Imagem-Historia > .container{
-	display: flex;
-	flex-wrap: wrap;
+section.sobre__final{
+	background-color: rgb(230,230,230);
+	border-top: 2px solid rgb(210,210,210);
+	padding: 20px 0;
 }
 
-.Imagem-Historia{
-	padding:30px 0;
-	background: rgb(225,225,225);
-}
-
-.Imagem-Dia-Container{
-	width: 50%;
-	padding-right: 10px;
-}
-
-.Nossa-Historia-Container{
-	width: 50%;
-}
-
-.Imagem-Imagem-Do-Dia img{
-	width: 80%;
-	height: 800%;
+section.sobre__final p{
 	margin-top: 10px;
+	font-size: 16px;
+	font-weight: lighter;
 }
 
-.Imagem-Imagem-Do-Dia{
+.card-text{
+	margin-top: 10px;
+	width: 80%;
 	position: relative;
-	display: inline-block;
 }
-.Imagem-Imagem-Do-Dia p{
-	position: absolute;
-	color: white;
-	top: 250px;
-	left: 300px;
+.card-text img{
+	max-width: 100%;
 }
 
-/*AQUI COMEÇA A CONTATO*/
+.card-text h3{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+}
 
 section.contato{
-	min-height: 100%;
+	min-height: 600px;
 	padding: 30px 0;
 }
 
-section.contato .w50, section.contato .w100{
+section.contato .w50,
+section.contato .w100{
 	padding: 0 10px;
-}	
+}
+
 
 .formulario form{
 	margin-top: 10px;
 }
-
 .formulario h2{
-	background: #dddddd;
+	background: #DDDDDD;
 	text-align: center;
-	color: #acac9d;
+	color: #ACAC9D;
 	font-size: 17px;
 	font-weight: normal;
-	border-left: 5px solid #cccccc;
+	border-left: 5px solid #CCCCCC;
 	padding: 4px 0;
 }
 
-.formulario input[type=text], .formulario input[type=email]{
+.formulario input[type=text],
+.formulario input[type=email]{
 	width: 100%;
 	height: 40px;
-	border: 1px solid #ccc;
+	border:1px solid #ccc;
 	margin-bottom: 15px;
 	padding-left: 8px;
 }
@@ -518,27 +545,128 @@ section.contato .w50, section.contato .w100{
 	height: 120px;
 	border:1px solid #ccc;
 	margin-bottom: 15px;
-	padding: 10px;
+	padding:10px;
 	resize: vertical;
 }
 
-.tag-form{
-	padding-left: 40px;
-
+.tags-form{
+	padding-left: 50px;
 }
 
-.tag-form h2{
+.tags-form h2{
 	font-weight: normal;
 }
 
-.tag-form p{
+.tags-form p{
 	font-weight: lighter;
 }
 
-.tag-form p.tag-contato{
+.tags-form p.tag-contato{
 	color: white;
-	background: #249b8f;
+	background:#249B8F;
 	text-align: center;
 	margin-top: 6px;
 	padding: 8px 4px;
+}
+
+@media screen and (max-width: 768px) {
+	.box-icone-single{
+		width: 100%;
+	}
+
+	.equipe-container{
+		width: 100%;
+		padding-bottom: 40px;
+	}
+
+	.sobre-container{
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	.equipe-sobre{
+		width: 100%;
+		text-align: center;
+	}
+
+	.equipe-sobre p{
+		padding-left: 50px;
+	}
+
+	.card-single{
+		width: 100%;
+		padding: 10px;
+	}
+	.w33{
+		width: 100%;
+	}
+
+	footer.footer1{
+		text-align: center;
+	}
+
+	footer.footer1 h2{
+		margin: 10px 0;
+	}
+	
+	footer.footer1 p{
+		margin: 10px 0;
+	}
+
+	.group-icons a{
+		text-align: center;
+	}
+
+	section.main-bg{
+		padding: 100px 0 100px 0;
+	}
+
+	.w50{
+		width: 100%;
+	}
+
+	section.inscricao h2{
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+/*AQUI COMEÇA A PARTE "SOBRE"*/
+	.sobre__noticia__single img {
+		width: 100%;
+	}
+
+	.sobre__noticia__single p {
+		width: 100%;
+	}	
+
+	.paragrafo__noticia__single p{
+		width: 100%;
+		margin-left: 15px;
+	}
+
+	.equipe-circle-single{
+		width: 61%;
+		padding: 0 10px;
+	}
+	
+	.equipe-circles{
+		margin-top: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 170px;
+	}
+
+	.Imagem-Imagem-Do-Dia img{
+		width: 100%;
+		padding-bottom: 50px;
+	}
+
+	.Nossa-Historia-Container{
+		width: 100%;
+		padding-bottom: 50px;
+	}
+
+	.Nossa-Historia-Container p{
+		margin: 10px 0;
+	}
 }

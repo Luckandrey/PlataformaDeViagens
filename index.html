@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108589404-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108589404-1');
+</script>
 	<title>Projeto Web Design Express</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Danki Code">
@@ -30,7 +38,20 @@
 					</li>
 				</ul>
 			</nav>
-			
+			<nav class="menu-mobile">
+				<h2><i class="fa fa-bars"></i></h2>
+				<ul>
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+					<li>
+						<a href="contato.html">Contato</a>
+					</li>
+				</ul>
+			</nav>
 			<div class="clear"></div>
 		</div>
 	</header>
@@ -39,10 +60,10 @@
 		<div class="container">
 		<h2>Web Design Express</h2>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 		</div>
 	</section>
-
 	<section class="diferenciais">
 		<div class="container">
 			<div class="line-text">
@@ -69,7 +90,6 @@
 
 		</div>
 	</section>
-
 	<section class="sobre-equipe">
 		<div class="container">
 		<div class="equipe-container">
@@ -79,14 +99,14 @@
 			</div>
 
 				<div class="avatar-box">
-					<div style="background-image: url('imagens/avatar.jpg');" class="img-avatar"></div><div class="descricao-avatar">
+					<div style="background-image: url('images/avatar.jpg');" class="img-avatar"></div><div class="descricao-avatar">
 						<h3>Guilherme Grillo</h3>
 						<p>Programador, Instrutor, CEO da Danki Code. Apaixonado por tecnologia e esportes.</p>
 					</div>
 				</div><!--avatar-box-->
 
 				<div class="avatar-box">
-					<div style="background-image: url('imagens/avatar.jpg');" class="img-avatar"></div><div class="descricao-avatar">
+					<div style="background-image: url('images/avatar.jpg');" class="img-avatar"></div><div class="descricao-avatar">
 						<h3>Guilherme Grillo</h3>
 						<p>Programador, Instrutor, CEO da Danki Code. Apaixonado por tecnologia e esportes.</p>
 					</div>
@@ -109,7 +129,7 @@
 	<section class="inscricao">
 		<div class="container">
 			<div class="w50 center">
-				<h2 class="inscricao-texto"><i class="fa fa-bullhorn" aria-hidden="true"></i> Inscreva-se na nossa lista</h2>
+				<h2 class="inscricao-texto"><i class="fa fa-bullhorn" aria-hidden="true"></i> Inscreva-se na nossa lista!</h2>
 			</div>
 			<div class="w50 center">
 				<form class="inscricao-form">
@@ -119,21 +139,20 @@
 			<div class="clear"></div>
 		</div>
 	</section>
-	
 	<section class="cards">
 		<div class="container">
 			<div class="card-single">
-				<img src="imagens/img1.jpg" alt="" title="" />
+				<img src="images/img1.jpg" alt="" title="" />
 				<h3>Lorem ipsum</h3>
 				<p>Incididunt culpa id consequat aliqua enim consectetur in enim velit in exercitation sunt in ex ut commodo dolore ut.</p>
 			</div>
 			<div class="card-single">
-				<img src="imagens/img2.jpg" alt="" title="" />
+				<img src="images/img2.jpg" alt="" title="" />
 				<h3>Lorem ipsum</h3>
 				<p>Incididunt culpa id consequat aliqua enim consectetur in enim velit in exercitation sunt in ex ut commodo dolore ut.</p>
 			</div>
 			<div class="card-single">
-				<img src="imagens/img3.jpg" alt="" title="" />
+				<img src="images/img3.jpg" alt="" title="" />
 				<h3>Lorem ipsum</h3>
 				<p>Incididunt culpa id consequat aliqua enim consectetur in enim velit in exercitation sunt in ex ut commodo dolore ut.</p>
 			</div>
@@ -145,7 +164,7 @@
 			<div class="w33">
 				<h2>Aonde estamos?</h2>
 				<p><i class="fa fa-map-pin" aria-hidden="true"></i> R. Fulano da silva, Coqueiros, Floripa/SC</p>
-				<p><i class="fa fa-phone" aria-hidden="true"></i> (48)9999-9999</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i> (48) 9999-9999</p>
 			</div>
 			<div class="w33">
 				<h2>Links Úteis</h2>
@@ -155,8 +174,8 @@
 			<div class="w33">
 				<h2>Conecte-se conosco</h2>
 				<div class="group-icons">
-					<a href=""><i class="fa-brands fa-facebook fa-flip"></i></a>
-					<a href=""><i class="fa-brands fa-instagram fa-flip"></i></a>
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-instagram"></i></a>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -167,6 +186,11 @@
 			<p>Todos os direitos reservados</p>
 		</div>
 	</footer>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$('nav.menu-mobile h2').click(function(){
+			$('nav.menu-mobile ul').slideToggle();
+		});
+	</script>
 </body>
 </html>
