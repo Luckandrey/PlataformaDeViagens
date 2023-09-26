@@ -5,6 +5,35 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+.hamburger-menu {
+    width: 30px;
+    height: 22px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;  /* By default, we hide the icon on large screens */
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+/* Show the hamburger menu icon on small screens (e.g., below 768px) */
+@media only screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Hide menu-desktop on small screens */
+    .menu-desktop {
+        display: none;
+    }
+}
+
 
 /*Classes Auxiliares*/
 .container{
@@ -118,7 +147,7 @@ section.main-bg{
 	position: relative;
 	width: 100%;
 	padding:140px 0 200px 0;
-	background-image: url('../imagens/bg1.jpg');
+	background-image: url('../images/bg1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -414,7 +443,7 @@ section.paralax{
 	padding: 30px 0;
 	width: 100%;
 	min-height: 200px;
-	background-image: url('../imagens/bg1.jpg');
+	background-image: url('../images/bg1.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -529,7 +558,8 @@ section.contato .w100{
 	font-weight: normal;
 	border-left: 5px solid #CCCCCC;
 	padding: 4px 0;
-	margin-top: 10px;
+	margin-top: 20px;
+	
 }
 
 .formulario input[type=text],
@@ -596,6 +626,73 @@ section.Imagem-Historia > .container{
 	width: 50%;
 	padding-left: 30px;
 }
+
+/*AQUI COMEÇA O "LOGIN"*/
+	.LoginPage{
+		width: 100%;
+		background-color:#44D4C5;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		height: 944.4px;
+	}
+
+	.Login{
+		display: flex;
+		background-color: white;
+		padding: 40px;
+		width: 500px;
+		border-radius: 10px;
+		flex-direction: column;
+		box-shadow:0px 0px 10px 0px rgb(0,0,0, 0.8);
+
+	}
+
+	.Login h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.Login p{
+		display: inline-block;
+		text-align: center;
+	}
+
+	.Login input{
+		padding: 15px;
+		border: 1px solid #ccc;
+		margin-top: 10px;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		
+	}
+
+	.Login label{
+		font-size: 15px;
+		font-weight: 600;
+		margin-top: 10px;
+	}
+
+	.Login a{
+		display: inline-block;
+		color: black;
+		text-decoration: none;
+	}
+	
+	.Login input[type=submit]{
+		width: 200px;
+		height: 50px;
+		background: #1d6c64;
+		cursor: pointer;
+		display: inline-block;
+		border: 0;
+		color: white;
+		font-weight:normal;
+		font-size: 16px;
+		position: relative;
+		margin-left: 110px;
+	}
 
 @media screen and (max-width: 768px) {
 	.box-icone-single{
@@ -742,4 +839,18 @@ section.Imagem-Historia > .container{
 	.tag-form h2{
 		text-align: center;
 	}
+
+/*AQUI COMEÇA LOGIN RESPONSIVO*/
+	.LoginPage{
+		width: 100%;
+		height: 10%;
+	}
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	.LoginPage{
+		width: 100%;
+		height: 10%;
+	}
+}
+
